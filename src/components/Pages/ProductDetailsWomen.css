@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  margin-bottom: 20px;
+}
+.container > .image > .thumb {
+  margin-left: 25px;
+  margin-top: 25px;
+  height: 95px;
+  width: 95px;
+  display: flex;
+
+  cursor: pointer;
+}
+.container > .details {
+  display: grid;
+}
+.container > .details > .dh1 {
+  color: brown;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container > .details > .dh3 {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+.container > .details > .dbut {
+  color: black;
+  height: 30px;
+  background-color: rgb(218, 106, 32);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+.other {
+  margin-bottom: 50px;
+  margin-left: 55px;
+}
+@media screen and (max-width: 850px) {
+  .container {
+    display: flex;
+  }
+  .container > .image img {
+    height: 250px;
+    width: 200px;
+  }
+  .container > .image > .thumb img {
+    margin-left: -10px;
+    margin-top: 5px;
+    height: 55px;
+    width: 55px;
+    display: flex;
+  }
+  .container > .details {
+    font-size: 10px;
+  }
+  .container > .details > .dbut {
+    margin-bottom: 35px;
+    margin-right: 10px;
+  }
+  .container > .cart {
+    display: none;
+  }
+}
